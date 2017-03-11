@@ -14,6 +14,7 @@
 		04C4B62F1E744416005FEA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C4B62D1E744416005FEA75 /* LaunchScreen.storyboard */; };
 		04C4B63A1E744416005FEA75 /* FMStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B6391E744416005FEA75 /* FMStorageTests.swift */; };
 		04C4B6451E744416005FEA75 /* FMStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B6441E744416005FEA75 /* FMStorageUITests.swift */; };
+		04C4B6531E744833005FEA75 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B6521E744833005FEA75 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		04C4B6401E744416005FEA75 /* FMStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C4B6441E744416005FEA75 /* FMStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMStorageUITests.swift; sourceTree = "<group>"; };
 		04C4B6461E744416005FEA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C4B6521E744833005FEA75 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				04C4B6241E744416005FEA75 /* AppDelegate.swift */,
 				04C4B6261E744416005FEA75 /* ViewController.swift */,
 				04C4B6281E744416005FEA75 /* Main.storyboard */,
+				04C4B6521E744833005FEA75 /* SettingsViewController.swift */,
 				04C4B62B1E744416005FEA75 /* Assets.xcassets */,
 				04C4B62D1E744416005FEA75 /* LaunchScreen.storyboard */,
 				04C4B6301E744416005FEA75 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				04C4B6271E744416005FEA75 /* ViewController.swift in Sources */,
 				04C4B6251E744416005FEA75 /* AppDelegate.swift in Sources */,
+				04C4B6531E744833005FEA75 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
