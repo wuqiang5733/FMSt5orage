@@ -14,19 +14,16 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let defaultValues = UserDefaults.standard
-        if let color = defaultValues.object(forKey: "color") as? Int {
-            let colorList = [UIColor.black, UIColor.red, UIColor.lightGray]
-            textEditor.textColor = colorList[color]
-        }
-        if let editable = defaultValues.object(forKey: "editable") as? Bool {
-            textEditor.isEditable = editable
-        }
-        if let correction = defaultValues.object(forKey: "correction") as? Bool {
-            if correction {
-                textEditor.spellCheckingType = .yes
-            } else {
-                textEditor.spellCheckingType = .no
-            }
+        let color = defaultValues.integer(forKey: "color")
+        let colorList = [UIColor.black, UIColor.gray, UIColor.lightGray]
+        textEditor.textColor = colorList[color]
+        textEditor.isEditable = defaultValues.bool(forKey: "editable")
+        
+        let correction = defaultValues.bool(forKey: "correction")
+        if correction {
+            textEditor.spellCheckingType = .yes
+        } else {
+            textEditor.spellCheckingType = .no
         }
     }
 }
